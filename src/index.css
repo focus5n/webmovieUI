@@ -1,19 +1,357 @@
 /* 전체적으로 적용 */
 
-:root {
-  color: darkslategray;
-  background-color: darkgray;
-  accent-color: hsl(313, 62%, 45%);
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: "Vujahday Script", "East Sea Dokdo";
 }
 
-a {
+a,
+a:hover {
   text-decoration: none;
+  color: darkred;
+}
+
+/* 로그인  */
+.loginSection {
+  position: relative;
+  min-height: 100vh;
+  background: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.loginSection .loginContainer {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.loginSection .loginContainer .user {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.loginSection .loginContainer .imgBx {
+  position: relative;
+
+  width: 50vh;
+  height: auto;
+  transition: 0.5s;
+}
+
+.loginSection .loginContainer .user .imgBx img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+
+  width: 400px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.loginSection .loginContainer .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+
+  padding: 40px;
+}
+
+.loginSection .loginContainer .user .formBx h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+
+  width: 100%;
+  margin-bottom: 20px;
+  color: darkslategrey;
+}
+
+.loginSection .loginContainer .user .formBx input {
+  width: 100%;
+  padding: 10px;
+  background: rgb(228, 224, 205);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 18px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.loginSection .loginContainer .user .formBx input[type="submit"] {
+  max-width: 100%;
+  background: cyan;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* 회원가입 */
+
+.signupSection {
+  position: relative;
+  min-height: 100vh;
+  background: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.signupSection .signupContainer {
+  position: relative;
+  width: 800px;
+  height: 625px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.signupSection .signupContainer .user {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.signupSection .signupContainer .imgBx {
+  position: relative;
+
+  width: 50vh;
+  height: auto;
+  transition: 0.5s;
+}
+
+.signupSection .signupContainer .user .imgBx img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+
+  width: 400px;
+  height: 625px;
+  display: block;
+  object-fit: cover;
+}
+
+.signupSection .signupContainer .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+
+  padding: 40px;
+}
+
+.signupSection .signupContainer .user .formBx h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+
+  width: 100%;
+  margin-bottom: 20px;
+  color: darkslategrey;
+}
+
+.signupSection .signupContainer .user .formBx input {
+  width: 100%;
+  padding: 10px;
+  background: rgb(228, 224, 205);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 18px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.signupSection .signupContainer .user .formBx input[type="submit"] {
+  max-width: 100%;
+  background: cyan;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.signupSection .signupContainer .user .formBx .signupEmail {
+  width: 100%;
+  padding: 10px;
+  background: rgb(228, 224, 205);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 18px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.signupSection .signupContainer .user .formBx input[type="button" i] {
+  width: 100%%;
+  padding: 10px;
+  background: cadetblue;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 18px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* 뉴스 섹션 */
+.News__Section {
+  padding: 10vh;
+  overflow: scroll;
+}
+
+.card {
+  position: relative;
+  height: 350px;
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  overflow: scroll;
+}
+
+.card post-img {
+  height: 250px;
+}
+
+.card .post-img img {
+  transition: 0.5s;
+  max-width: 100%;
+}
+
+.card:hover .post-img img {
+  transform: scale(1) translateY(-25px);
+  max-width: 100%;
+}
+
+.card .news-content {
+  position: absolute;
+  bottom: -100px;
+  padding: 0px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.card .category {
+  position: absolute;
+  top: -25px;
+  left: 0%;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+  background: cyan;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.card .news-content .post-meta a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.card .news-content .post-meta a:hover {
+  color: lightslategrey;
+}
+.card .news-content .post-header {
+  margin: 0%;
+  padding: 10px 0;
+  color: #007da6;
+  height: 70px;
+  background: #ccc;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+.card .news-content p {
+  font-size: 16px;
+  margin: 10px 0 0;
+  padding: 0;
+  color: darkslategray;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card:hover .news-content p {
+  opacity: 1;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: bisque;
+  padding-top: 24px;
+}
+
+.header .header__title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+/* 메인 배너 */
+.banner {
+  position: relative;
+  min-height: 20vh;
+  max-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0%;
+}
+
+.banner .imgBx .img {
+  max-width: 100%;
+  max-height: 80vh;
 }
 
 /* 상품 카드 */
@@ -77,7 +415,7 @@ a {
 .details h2 {
   margin: 0%;
   padding: 0%;
-  font-size: 24px;
+  font-size: 30px;
   width: 100%;
 }
 
@@ -109,7 +447,6 @@ a {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: bisque;
   padding: 8px 12px;
   margin: 0%;
@@ -119,6 +456,11 @@ a {
   display: flex;
   list-style: none;
   font-size: 24px;
+}
+
+.navbar__logo h1 {
+  margin-top: 8px;
+  padding-left: 10px;
 }
 
 .navbar__menu {
@@ -139,12 +481,16 @@ a {
 .navbar__icon {
   display: flex;
   list-style: none;
-  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 20px;
 }
 
 .navbar__icon li {
   padding: 8px 12px;
   padding-left: 0%;
+  padding-right: 24px;
 }
 
 .navbar__icon li:hover {
@@ -153,6 +499,7 @@ a {
 }
 
 .navbar__toggleBtn {
+  margin-top: 8px;
   display: none;
   position: absolute;
   right: 32px;
@@ -164,13 +511,12 @@ a {
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   background: antiquewhite;
   position: relative;
   width: 100%;
   height: auto;
-  padding: 20px;
   flex-wrap: wrap;
 }
 
@@ -179,40 +525,42 @@ footer .container {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 30px;
+  padding-right: 0px;
 }
 
-footer .container .sec {
-  margin-right: 30px;
+footer .container .sec.aboutus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
 }
 
-footer .container .sec .aboutus {
-  width: 40%;
-}
-
-footer .container .sec .aboutus h2 {
+footer .container .sec.aboutus h2 {
   position: relative;
   font-weight: 500;
-  margin-bottom: 24px;
-}
-
-footer .container .aboutus h2:before {
-  content: "";
-  position: absolute;
-  bottom: -5vh;
-  left: 0%;
 }
 
 footer p {
   color: #555;
+  padding-top: 24px;
+}
+footer .sec.aboutus .link {
+  margin: 0;
+  padding: 0;
+  margin: 10px;
+  margin-left: 0%;
 }
 
 .link {
   display: flex;
-  margin-top: 5vh;
+  justify-content: flex-start;
+  margin-top: 10vh;
 }
 
 .link li {
   list-style: none;
+  margin-top: 10px;
 }
 
 .link li a {
@@ -238,26 +586,35 @@ footer p {
 }
 
 .contact {
-  width: auto;
-  margin-right: 0;
-}
-
-.contact .info {
-  position: relative;
-}
-
-.contact .info li {
   display: flex;
-  margin-bottom: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 22%;
 }
 
-.contact .info li span:nth-child(1) {
-  color: antiquewhite;
-  font-size: 20px;
-  margin-right: 10px;
+footer .container .sec.contact .info {
+  margin: 0%;
+  padding: 0%;
+}
+
+.sec.contact .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sec.contact .info li {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .contact .info li span {
+  align-items: center;
+  margin-right: 10px;
 }
 .contact .info li a {
   text-decoration: none;
@@ -269,6 +626,7 @@ footer p {
     flex-direction: column;
     align-items: flex-start;
     padding: 8px 24px;
+    min-height: 75px;
   }
 
   .navbar__menu {
@@ -278,15 +636,18 @@ footer p {
     width: 100%;
   }
 
+  .navbar__logo {
+    position: absolute;
+  }
+
   .navbar__menu li {
-    width: 100%;
+    width: 33%;
     text-align: center;
   }
 
   .navbar__icon {
     display: none;
-    flex-direction: column;
-    justify-content: 100%;
+    flex-direction: row;
     width: 100%;
   }
 
@@ -303,8 +664,4 @@ footer p {
   .navbar__icon.active {
     display: flex;
   }
-}
-
-/* 반응형 상품 카드 */
-@media screen and (max-width: 768px) {
 }
